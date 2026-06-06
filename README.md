@@ -125,19 +125,13 @@ flowchart LR
 | 🛡️ **[JAAvila.SafeTypes](https://github.com/JAAvila-Of/JAAvila.SafeTypes)** | My very **first** .NET library 💚 — lightweight type-safety utilities to dodge null-reference errors and enforce stricter, compile-time contracts (e.g. `source.SafeNull()`). Humble, but where the journey began. | C# / .NET |
 | 💉 **[418Apps-COVID](https://github.com/JAAvila-Of/418Apps-COVID)** | COVID-19 vaccination tracker for Peru using official open data. | Svelte · TS |
 
-<div align="center">
-  <a href="https://github.com/ridge-lang/ridge"><img src="https://github-readme-stats.vercel.app/api/pin/?username=ridge-lang&repo=ridge&bg_color=0d1117&title_color=39d353&text_color=c9d1d9&icon_color=bb9af7&border_color=39d353" alt="Ridge" /></a>
-  <a href="https://github.com/JAAvila-Of/agm-cli"><img src="https://github-readme-stats.vercel.app/api/pin/?username=JAAvila-Of&repo=agm-cli&bg_color=0d1117&title_color=39d353&text_color=c9d1d9&icon_color=bb9af7&border_color=39d353" alt="agm-cli" /></a>
-</div>
-
 ---
 
 ## `~/stats --all`
 
 <div align="center">
 
-<img height="170em" src="https://github-readme-stats.vercel.app/api?username=JAAvila-Of&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&bg_color=0d1117&title_color=39d353&text_color=c9d1d9&icon_color=bb9af7" alt="stats" />
-<img height="170em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=JAAvila-Of&layout=compact&langs_count=8&hide_border=true&bg_color=0d1117&title_color=39d353&text_color=c9d1d9" alt="top langs" />
+<img src="./github-metrics.svg" alt="GitHub metrics — stats, languages & activity" />
 
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=JAAvila-Of&hide_border=true&background=0d1117&stroke=39d353&ring=39d353&fire=bb9af7&currStreakLabel=39d353&sideLabels=c9d1d9&dates=8b949e&currStreakNum=c9d1d9&sideNums=c9d1d9" alt="streak" />
 
@@ -161,18 +155,11 @@ flowchart LR
   <img src="https://raw.githubusercontent.com/JAAvila-Of/JAAvila-Of/output/github-contribution-grid-snake-dark.svg" alt="snake" />
 </div>
 
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=JAAvila-Of&theme=matrix&no-frame=true&no-bg=true&column=7&margin-w=4" alt="trophies" />
-</div>
+#### 🏅 Achievements
 
-<details>
-<summary><b>🗂️ Full metrics</b> (click to expand)</summary>
-<br/>
 <div align="center">
-  <!-- METRICS: lo genera metrics.yml con un token PAT. Ver ../SETUP-WIDGETS.md -->
-  <img src="./github-metrics.svg" alt="metrics" />
+  <img src="./metrics-achievements.svg" alt="achievements" />
 </div>
-</details>
 
 ---
 

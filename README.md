@@ -166,7 +166,7 @@ flowchart LR
 </div>
 
 <details>
-<summary><b>🗂️ Full metrics</b> (click to expand) — requiere setup (PAT)</summary>
+<summary><b>🗂️ Full metrics</b> (click to expand)</summary>
 <br/>
 <div align="center">
   <!-- METRICS: lo genera metrics.yml con un token PAT. Ver ../SETUP-WIDGETS.md -->

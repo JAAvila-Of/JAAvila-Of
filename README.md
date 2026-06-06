@@ -155,12 +155,6 @@ flowchart LR
   <img src="https://raw.githubusercontent.com/JAAvila-Of/JAAvila-Of/output/github-contribution-grid-snake-dark.svg" alt="snake" />
 </div>
 
-#### 🏅 Achievements
-
-<div align="center">
-  <img src="./metrics-achievements.svg" alt="achievements" />
-</div>
-
 ---
 
 ## `~/now-playing`  🎧

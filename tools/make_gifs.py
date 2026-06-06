@@ -94,7 +94,7 @@ def term(p, idx):
     e.append('<text x="360" y="28" text-anchor="middle" fill="#8b949e" font-size="13">jose@ridge: ~/profile</text>')
     e.append(f'<text x="22" y="82" fill="{G}">$</text><text x="40" y="82" fill="{CMD}">{c1}</text>')
     if out1:
-        e.append(f'<text x="22" y="110" xml:space="preserve"><tspan fill="{CMD}">Jose Angel Avila</tspan>'
+        e.append(f'<text x="22" y="110" xml:space="preserve"><tspan fill="{CMD}">Jóse Angel Avila</tspan>'
                  f'<tspan fill="{DIM}">  ·  language designer</tspan></text>')
     e.append(f'<text x="22" y="142" fill="{G}">$</text>'
              f'<text x="40" y="142" fill="{CMD}" xml:space="preserve">{c2}</text>')

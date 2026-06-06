@@ -37,7 +37,7 @@
 
 ```console
 $ whoami
-> Jose Angel Avila  —  language designer & backend engineer  🦀
+> Jóse Angel Avila  —  language designer & backend engineer  🦀
 
 $ cat ./about.txt
 > 🇪🇸 Creador de Ridge, un lenguaje funcional tipado para la BEAM (en Rust).

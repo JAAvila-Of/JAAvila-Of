@@ -45,7 +45,7 @@
     <g class="cmd1"><text x="40" y="82" fill="#e6edf3">whoami</text></g>
 
     <!-- out1 -->
-    <text class="out1" x="22" y="110" xml:space="preserve"><tspan fill="#e6edf3">Jose Angel Avila</tspan><tspan fill="#8b949e">  ·  language designer</tspan></text>
+    <text class="out1" x="22" y="110" xml:space="preserve"><tspan fill="#e6edf3">Jóse Angel Avila</tspan><tspan fill="#8b949e">  ·  language designer</tspan></text>
 
     <!-- L2: $ ridge run hello.ridge -->
     <text x="22" y="142" fill="#39d353">$</text>

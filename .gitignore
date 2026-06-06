@@ -1,0 +1,4 @@
+# Local previews & temp renders — not part of the profile
+assets/_preview/
+assets/_*.png
+assets/_*.svg

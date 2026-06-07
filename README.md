@@ -74,27 +74,18 @@ fn nextCell (grid: Grid) (r: Int) (c: Int) -> Bool =
         _          -> false  -- dies / stays dead
 ```
 
-<details>
-<summary><b>🔧 The Ridge compiler pipeline</b> (click to expand)</summary>
+<div align="center">
 
-<br/>
+<!-- Compilador en vivo — SVG animados (reemplazan el diagrama estático) -->
+<img src="./assets/pipeline.svg" alt="The Ridge compiler pipeline (animated)" width="840" />
 
-```mermaid
-%%{init: {'theme':'dark', 'themeVariables': {'primaryColor':'#0d1117','primaryBorderColor':'#39d353','lineColor':'#39d353','primaryTextColor':'#c9d1d9','fontFamily':'JetBrains Mono, monospace'}}}%%
-flowchart LR
-    SRC["📄 source.ridge"] --> LEX["ridge-lexer"]
-    LEX --> PAR["ridge-parser<br/>→ AST"]
-    PAR --> RES["ridge-resolve<br/>names & modules"]
-    RES --> TC["ridge-typecheck<br/>HM · row poly · capabilities"]
-    TC --> IR["ridge-ir<br/>→ ridge-lower"]
-    IR --> ERL["codegen-erl<br/>Core Erlang → BEAM 🟢"]
-    IR -.-> LLVM["codegen-llvm<br/>native · exploratory"]
-    IR -.-> WASM["codegen-wasm<br/>WebAssembly · exploratory"]
-```
+<img src="./assets/type-infer.svg" alt="Hindley-Milner type inference (animated)" width="840" />
 
-*Tooling around it: `ridge-cli`, `ridge-lsp`, `ridge-fmt`, `ridge-pkg`, `ridge-stdlib`, `ridge-diagnostics`.*
+<img src="./assets/actors.svg" alt="BEAM actor processes passing messages (animated)" width="840" />
 
-</details>
+<sub><i>compiler pipeline · Hindley-Milner inference · actor-first concurrency — Core Erlang/BEAM 🟢, LLVM &amp; WASM exploratory</i></sub>
+
+</div>
 
 <div align="center">
 
@@ -143,16 +134,11 @@ flowchart LR
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=JAAvila-Of&hide_border=true&bg_color=0d1117&color=39d353&line=39d353&point=bb9af7&area=true&area_color=39d353" alt="activity graph" />
 </div>
 
-#### 🧊 Contribution worlds
+#### ⚡ Project pulse — live
 
 <div align="center">
-  <!-- 3D CONTRIB: lo genera el workflow 3d-contrib.yml. Ver ../SETUP-WIDGETS.md -->
-  <img src="./profile-3d-contrib/profile-night-green.svg" alt="3D contributions" />
-</div>
-
-<div align="center">
-  <!-- SNAKE: lo genera snake.yml (rama output) -->
-  <img src="https://raw.githubusercontent.com/JAAvila-Of/JAAvila-Of/output/github-contribution-grid-snake-dark.svg" alt="snake" />
+  <!-- Pulse de Ridge — datos REALES, auto-actualizado por pulse.yml -->
+  <img src="./assets/pulse.svg" alt="Ridge project pulse (live)" width="840" />
 </div>
 
 ---

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 230" width="820" height="230" font-family="'JetBrains Mono','Fira Code',Consolas,monospace" role="img" aria-label="Hindley-Milner type inference, animated">
+  <defs>
+    <style>
+      .scr{animation:scr 9s ease-in-out infinite}
+      @keyframes scr{0%{opacity:0}3%{opacity:1}93%{opacity:1}100%{opacity:0}}
+      .l1{opacity:0;animation:r1 9s infinite}.l2{opacity:0;animation:r2 9s infinite}
+      .l3{opacity:0;animation:r3 9s infinite}.l4{opacity:0;animation:r4 9s infinite}
+      @keyframes r1{0%,16%{opacity:0}22%,100%{opacity:1}}
+      @keyframes r2{0%,30%{opacity:0}36%,100%{opacity:1}}
+      @keyframes r3{0%,44%{opacity:0}50%,100%{opacity:1}}
+      @keyframes r4{0%,60%{opacity:0}66%,100%{opacity:1}}
+      .cur{animation:bl 1s steps(1) infinite}
+      @keyframes bl{0%,50%{opacity:1}51%,100%{opacity:0}}
+    </style>
+  </defs>
+
+  <rect x="1" y="1" width="818" height="228" rx="12" fill="#0d1117" stroke="#30363d"/>
+  <text x="24" y="36" font-size="16" font-weight="600"><tspan fill="#39d353">$ </tspan><tspan fill="#8b949e">ridge check </tspan><tspan fill="#e6edf3">infer.ridge</tspan></text>
+
+  <g class="scr">
+    <!-- expresión -->
+    <text x="24" y="80" font-size="18" xml:space="preserve"><tspan fill="#39d353">let</tspan><tspan fill="#e6edf3"> double = </tspan><tspan fill="#bb9af7">fn</tspan><tspan fill="#e6edf3"> xs -> xs </tspan><tspan fill="#39d353">|></tspan><tspan fill="#e6edf3"> List.map (</tspan><tspan fill="#bb9af7">fn</tspan><tspan fill="#e6edf3"> x -> x * 2)</tspan></text>
+
+    <!-- pasos de inferencia -->
+    <text class="l1" x="40" y="120" font-size="16" xml:space="preserve"><tspan fill="#8b949e">x : </tspan><tspan fill="#bb9af7">t0</tspan><tspan fill="#484f58">      from  x * 2   =></tspan><tspan fill="#8b949e">   t0 = </tspan><tspan fill="#39d353">Int</tspan></text>
+    <text class="l2" x="40" y="148" font-size="16" xml:space="preserve"><tspan fill="#8b949e">List.map : </tspan><tspan fill="#79c0ff">(a -> b) -> List a -> List b</tspan></text>
+    <text class="l3" x="40" y="176" font-size="16" xml:space="preserve"><tspan fill="#8b949e">xs : </tspan><tspan fill="#39d353">List Int</tspan></text>
+    <text class="l4" x="40" y="206" font-size="17" xml:space="preserve"><tspan fill="#8b949e">|- </tspan><tspan fill="#e6edf3" font-weight="700">double : </tspan><tspan fill="#39d353" font-weight="700">List Int -> List Int</tspan><tspan fill="#2c7a44">    // inferred</tspan><tspan class="cur" fill="#39d353">  █</tspan></text>
+  </g>
+</svg>

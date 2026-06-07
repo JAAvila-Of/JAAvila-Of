@@ -1,0 +1,36 @@
+name: Generate Project Pulse
+
+on:
+  schedule:
+    - cron: "30 */6 * * *"   # cada 6 horas
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  pulse:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Generate pulse.svg (datos reales de ridge-lang/ridge)
+        env:
+          # PAT con scope repo (lee la API de ridge-lang/ridge). Ver SETUP-WIDGETS.md
+          GH_TOKEN: ${{ secrets.METRICS_TOKEN }}
+        run: python tools/gen_pulse.py
+
+      - name: Commit & push pulse.svg
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/pulse.svg
+          git commit -m "chore: update Ridge project pulse" || echo "No changes"
+          git push

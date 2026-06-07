@@ -88,8 +88,8 @@ flowchart LR
     RES --> TC["ridge-typecheck<br/>HM · row poly · capabilities"]
     TC --> IR["ridge-ir<br/>→ ridge-lower"]
     IR --> ERL["codegen-erl<br/>Core Erlang → BEAM 🟢"]
-    IR --> LLVM["codegen-llvm<br/>native binary"]
-    IR --> WASM["codegen-wasm<br/>WebAssembly"]
+    IR -.-> LLVM["codegen-llvm<br/>native · exploratory"]
+    IR -.-> WASM["codegen-wasm<br/>WebAssembly · exploratory"]
 ```
 
 *Tooling around it: `ridge-cli`, `ridge-lsp`, `ridge-fmt`, `ridge-pkg`, `ridge-stdlib`, `ridge-diagnostics`.*
@@ -119,7 +119,7 @@ flowchart LR
 
 | Project | Description | Tech |
 |---|---|---|
-| 🦀 **[Ridge](https://github.com/ridge-lang/ridge)** ⭐ | Typed functional language for the BEAM. HM inference, row polymorphism, actor-first concurrency, capabilities in the type system. 3 backends: Erlang/BEAM, LLVM, WASM. *(VS Code extension available.)* | Rust · BEAM |
+| 🦀 **[Ridge](https://github.com/ridge-lang/ridge)** ⭐ | Typed functional language for the BEAM. HM inference, row polymorphism, actor-first concurrency, capabilities in the type system. Compiles to Core Erlang/BEAM; native (LLVM) & WASM backends are exploratory. *(In active development.)* | Rust · BEAM |
 | 🐙 **[agm-cli](https://github.com/JAAvila-Of/agm-cli)** | CLI & Rust library to parse, validate, render and orchestrate *Agent Graph Memory* (AGM) files for AI-agent workflows. Born out of the **Octopus** project. | Rust |
 | 💜 **[JAAvila.FluentOperations](https://github.com/JAAvila-Of/JAAvila.FluentOperations)** | Large fluent **validation & assertive-testing** library for .NET — thread-safe, chained operations that unify inline `.Test()` assertions with model **Quality Blueprints**. 6,500+ tests; covers strings, numbers, dates, collections — even **architecture rules** (type & assembly). Integrations: DI, ASP.NET Core, Minimal API, MediatR, gRPC, OpenAPI & Roslyn analyzers. | C# / .NET |
 | 🛡️ **[JAAvila.SafeTypes](https://github.com/JAAvila-Of/JAAvila.SafeTypes)** | My very **first** .NET library 💚 — lightweight type-safety utilities to dodge null-reference errors and enforce stricter, compile-time contracts (e.g. `source.SafeNull()`). Humble, but where the journey began. | C# / .NET |
